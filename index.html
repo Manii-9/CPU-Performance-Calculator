@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Performance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CPU Performance Calculator</h1>
+
+    <h2>CPU Time Calculator</h2>
+    <input id="instructionCount" placeholder="Enter Instruction Count">
+    <input id="cpi" placeholder="Enter CPI">
+    <input id="clockRate" placeholder="Enter Clock Rate (MHz)">
+    <button onclick="calculateCPUTime()">Calculate</button>
+    <p id="cpuResult"></p>
+
+    <h2>Average CPI Calculator</h2>
+    <input id="avgCPI" placeholder="Enter Average CPI">
+    <button onclick="calculateAverageCPI()">Calculate</button>
+    <p id="avgResult"></p>
+
+    <h2>MIPS Calculator</h2>
+    <input id="mipsCPI" placeholder="Enter CPI">
+    <input id="mipsClock" placeholder="Enter Clock Rate (MHz)">
+    <button onclick="calculateMIPS()">Calculate</button>
+    <p id="mipsResult"></p>
+
+    <h2>Compare Two CPUs</h2>
+    <input id="cpu1" placeholder="Enter CPU 1 Time">
+    <input id="cpu2" placeholder="Enter CPU 2 Time">
+    <button onclick="compareCPU()">Compare</button>
+    <p id="compareResult"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
